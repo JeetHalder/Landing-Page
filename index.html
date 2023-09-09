@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Using Html & Css</title>
+
+    <style type="text/css">
+        *{padding: 0; margin: 0; box-sizing: border-box;}
+        
+    header{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(rgb(0, 0, 0),rgba(255, 255, 255, 0.073)), 
+             url('/img/mountain.jpg');
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+       
+        color: white;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+
+    }
+    .logo{
+        font-size: 2.5em;
+        letter-spacing: 6px;
+    }
+    .menu a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 20px 10px;
+        position: relative;
+     
+
+    }
+    .menu a:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid indianred;
+        transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width: 90%;
+
+    }
+    .register a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 15px 15px;
+        background: indianred;
+        border-radius: 8px;
+        transition: 0.4s;
+
+
+    }  
+    .register a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+    .header-text{
+        max-width: 750px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+    }
+    .header-text span{
+        letter-spacing: 5px;
+    }
+    .header-text h1{
+        font-size: 4.5em;
+    }
+    .header-text a{
+        text-decoration: none;
+        background: indianred;
+        color: white;
+        padding: 10px 20px;
+        letter-spacing: 5px;
+        transition: 0.4s;
+    }
+    .header-text a:hover{
+        background: transparent;
+        border: 1px solid indianred;
+    }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Landing Page 
+            </div>
+
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+        </nav>
+        <br>
+        <section class="header-text">
+            <span>Mountain</span>
+            <h1>Landing Page</h1>
+            <br>
+            <a href="#">Sign Up</a>
+           <br>
+           &nbsp;
+           &nbsp;
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+        <h2>Lorem, ipsum dolor sit amet 
+            consectetur adipisicing elit. Quae 
+            doloremque officia inventore placeat 
+            similique corrupti hic laboriosam dignissimos, 
+            possimus voluptatem, animi laudantium doloribus 
+            incidunt cumque. Quod labore eaque nulla eum!</h2>
+    </div>
+        </section>
+
+    </header>
+    
+</body>
+</html>
